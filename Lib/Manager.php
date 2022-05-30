@@ -10,7 +10,7 @@ abstract class Manager
 
     public function __construct($db)
     {
-        $this->setDb();
+        $this->setDb($db);
     }
 
     /**
@@ -21,7 +21,7 @@ abstract class Manager
         $this->db = $db;
     }
 
-    abstract public function update(int $id);
+    abstract public function update(int $id, Array $data);
     abstract public function read(int $id);
     abstract public function delete(int $id);
     abstract public function create(Array $data);
