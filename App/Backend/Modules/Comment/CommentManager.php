@@ -50,8 +50,9 @@ class CommentManager extends \Library\Manager
     public function create(array $data): void
     {
         // TODO: Implement create() method.
-        $q = $this->db->prepare('INSERT INTO comments SET author = :idAuthor, content = :content');
+        $q = $this->db->prepare('INSERT INTO comments SET author = :idAuthor, content = :content, billet = :idBillet');
         $q->bindValue(':idAuthor', $data['idAuthor'], PDO::PARAM_INT);
         $q->bindValue(':content', $data['content'], PDO::PARAM_STR);
+        $q->bindValue(':idBillet', $data['idBillet'], PDO::PARAM_INT);
     }
 }

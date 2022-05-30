@@ -5,7 +5,7 @@ include_once('Models/blog/get_billets.php');
 $billets = get_billets(0, 5);
 
 // On effectue du traitement sur les donn�es (contr�leur)
-// Ici, on doit surtout s�curiser l'affichage
+// Ici, on doit surtout sécuriser l'affichage
 foreach($billets as $cle => $billet)
 {
     $billets[$cle]['titre'] = htmlspecialchars($billet['titre']);
