@@ -1,6 +1,6 @@
 <?php
 
-include_once('modele/connexion_sql.php');
+include_once('Models/connexion_sql.php');
 
 if (!isset($_GET['section']) OR $_GET['section'] == 'index')
 {

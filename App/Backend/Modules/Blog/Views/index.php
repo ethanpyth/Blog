@@ -3,7 +3,7 @@
     <head>
         <title>Mon blog</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        <link href="vue/blog/style.css" rel="stylesheet" type="text/css" /> 
+        <link href="../../../../../Web/Css/style.css" rel="stylesheet" type="text/css" />
     </head>
         
     <body>

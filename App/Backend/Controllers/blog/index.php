@@ -1,7 +1,7 @@
 <?php
 
 // On demande les 5 derniers billets (mod�le)
-include_once('modele/blog/get_billets.php');
+include_once('Models/blog/get_billets.php');
 $billets = get_billets(0, 5);
 
 // On effectue du traitement sur les donn�es (contr�leur)
